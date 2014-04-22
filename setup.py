@@ -11,7 +11,7 @@ setup(
     version = '0.1.0',
     license = 'ISC',
     description = 'pointhq.com API client with support for Python 3.x (based on pointhq package)',
-    long_description = read('README.rst'),
+    long_description = read('README.md'),
     url = 'https://github.com/copper/python-pointdns',
     author = 'Copper.io',
     author_email = 'accounts@copper.io',
