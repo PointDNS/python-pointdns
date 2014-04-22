@@ -1,0 +1,4 @@
+include AUTHORS
+include HISTORY.rst
+include LICENSE
+include README.md
