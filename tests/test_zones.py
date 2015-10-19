@@ -71,7 +71,7 @@ class ZoneTests(unittest2.TestCase):
     def test_member_update(self):
         self.request.return_value = Response(202)
         self.assertIsNone(self.point.zones(1).update(group='clients'))
-        self.request.assert_called_once_with('post', '/zones/1', self.auth, {
+        self.request.assert_called_once_with('put', '/zones/1', self.auth, {
             'zone': {
                 'group': 'clients',
             }
