@@ -30,3 +30,29 @@ class RequestTests(unittest2.TestCase):
             r = request('get', '/', ('john', 'secret-key'), scheme='http')
             self.assertTrue(r.status == 200)
             self.assertTrue(r.content == 'OK')
+
+    def test_http_put_request(self):
+
+        @urlmatch(netloc=r'pointhq\.com', scheme='http',
+                  method='put', path='/')
+        def response_content(url, request):
+            return {'status_code': 200,
+                    'content': b'OK'}
+
+        with HTTMock(response_content):
+            r = request('put', '/', ('john', 'secret-key'), scheme='http')
+            self.assertTrue(r.status == 200)
+            self.assertTrue(r.content == 'OK')
+
+    def test_https_put_request(self):
+
+        @urlmatch(netloc=r'pointhq\.com', scheme='https',
+                  method='put', path='/')
+        def response_content(url, request):
+            return {'status_code': 200,
+                    'content': b'OK'}
+
+        with HTTMock(response_content):
+            r = request('put', '/', ('john', 'secret-key'), scheme='https')
+            self.assertTrue(r.status == 200)
+            self.assertTrue(r.content == 'OK')

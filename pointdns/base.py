@@ -47,7 +47,7 @@ class BaseMember(BaseResource):
 
     @BaseResource.validate
     def update(self, **kwargs):
-        response = self.request('post', kwargs)
+        response = self.request('put', kwargs)
         if response.status == 202:
             return
         if response.status == 422:

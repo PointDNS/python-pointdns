@@ -66,7 +66,7 @@ class ZoneRecordTests(unittest2.TestCase):
     def test_member_update(self):
         self.request.return_value = Response(202)
         self.assertIsNone(self.point.zones(1).records(1).update(data='123.45.67.89'))
-        self.request.assert_called_once_with('post', '/zones/1/records/1', self.auth, {
+        self.request.assert_called_once_with('put', '/zones/1/records/1', self.auth, {
             'zone_record': {
                 'data': '123.45.67.89',
             }
