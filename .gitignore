@@ -7,3 +7,6 @@ __pycache__/
 .tox/
 dist/
 .idea/
+
+# added by GitSavvy
+/build/

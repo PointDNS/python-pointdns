@@ -23,7 +23,7 @@ Install ``pointdns`` with pip:
 
 or directly from GitHub
 
-    $ pip install git+https://github.com/copper/python-pointdns.git
+    $ pip install git+https://github.com/cognetoapps/python-pointdns.git
 
 It will also install `requests` library.
 

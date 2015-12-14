@@ -5,3 +5,9 @@ History
 ----------------
 
 - Initial release
+
+
+0.1.1(2015-12-14)
+----------------
+
+- Fix updates

@@ -13,7 +13,7 @@ setup(
     description = 'pointhq.com API client with support for Python 3.x (based on pointhq package)',
     long_description = read('README.md'),
     url = 'https://github.com/cognetoapps/python-pointdns',
-    author = 'Copper.io',
+    author = 'Cogneto.io',
     author_email = 'accounts@copper.io',
     packages = find_packages(),
     install_requires = [
