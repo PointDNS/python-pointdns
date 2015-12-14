@@ -8,11 +8,11 @@ def read(filename):
 
 setup(
     name = 'pointdns',
-    version = '0.1.0',
+    version = '0.1.1',
     license = 'ISC',
     description = 'pointhq.com API client with support for Python 3.x (based on pointhq package)',
     long_description = read('README.md'),
-    url = 'https://github.com/copper/python-pointdns',
+    url = 'https://github.com/cognetoapps/python-pointdns',
     author = 'Copper.io',
     author_email = 'accounts@copper.io',
     packages = find_packages(),
