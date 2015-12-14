@@ -31,7 +31,7 @@ It will also install `requests` library.
 
 * Create new `pointdns.Point` object:
 ```python
-import pointdns
+from pointdns import Point
 point = Point(username='john@example.com', apitoken='secret-key')
 ```
 * Play with zones::
